@@ -12,9 +12,12 @@ emergency: true if it's an emergency landing.
 
 ## Heaps:
 
-arrivalQueue: heap for normal arriving planes.
-departureQueue: heap for departing planes.
-emergencyLandingQueue: heap for emergency landings (highest priority).
+1.arrivalQueue: heap for normal arriving planes.
+
+2.departureQueue: heap for departing planes.
+
+3.emergencyLandingQueue: heap for emergency landings (highest priority).
+
 Each queue uses a min-heap based on:
 earliest time (lower time = higher priority),
 emergency status (true > false),
